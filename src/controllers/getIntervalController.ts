@@ -8,8 +8,8 @@ export class getIntervalController{
 
         const service = new getIntervalService();
 
-        const monitoramento = await service.execute({data_inicio,data_final,mac});
+        const intervalo = await service.execute({data_inicio,data_final,mac});
 
-        return response.json(monitoramento);
+        return response.json(intervalo);
     }
 }
